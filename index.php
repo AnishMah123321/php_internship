@@ -34,7 +34,7 @@
 </head>
     <body>
       <div class = "container">
-      <form action="" method="POST">
+      <form action="modules/curlPHP.php" method="POST">
 <!-- <form action="mail.php" method="POST"> -->
 <div class="mb-3">
   <label for="fullNameLabel" class="form-label">Name</label>
@@ -57,7 +57,7 @@
     <input type="text" name="captcha_code" size="10" maxlength="6" />
 <a href="#" onclick="document.getElementById('captcha').src = 'securimage/securimage_show.php?' + Math.random(); return false">[ Different Image ]</a> -->
 
-<div class="g-recaptcha" data-sitekey="6Leb7CEcAAAAACMqTQ0D2_A-iKOPc3pKvT5QnfrN"></div>
+<div name ="recatchaCheck" class="g-recaptcha" data-sitekey="6Leb7CEcAAAAACMqTQ0D2_A-iKOPc3pKvT5QnfrN"></div>
       <br/>
 
   
@@ -69,7 +69,8 @@
   var onloadCallback = function() {
     alert("grecaptcha is ready!");
   };
-</script>
+</script> -->
 
-<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script> -->
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 </body>
+

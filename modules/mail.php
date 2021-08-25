@@ -7,7 +7,7 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 //Load Composer's autoloader
-require 'vendor/autoload.php';
+require '../vendor/autoload.php';
 send_email_to_reciever($name , $email, $no, $mssg);
 function send_email_to_reciever($name , $email, $no, $mssg)
 {
@@ -54,5 +54,5 @@ function send_email_to_reciever($name , $email, $no, $mssg)
 }
 
 
-header("Location: index.php");
+header("Location: ../index.php");
 ?>
